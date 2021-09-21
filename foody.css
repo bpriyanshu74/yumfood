@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.feedback{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(247, 249, 250);
+    position: relative;
+}
+
+.feed-head{
+    padding:2rem;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Molengo', arial;
+}
+
+/* .feedback p{
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 40%;
+} */
+.feedback p{
+    text-align:center;
+    font-size:1.2rem;
+}
+
+.feedback span{
+color: red;
+}
+
+/* #feed{
+    margin-left: 30%;
+} */
+
+.view-box{
+    width: 68%;
+    height: 400px;
+    border-radius: 20%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    border-radius:30%;
+}
+
+#testimonial{
+    display:flex;
+    transition: 0.5s;
+}
+
+.user{
+    width: 800px;
+    text-align: center;    
+    box-sizing: border-box;
+    background: rgb(149, 77, 151);    
+    box-shadow: 0 10px 20px -5px #00000061;
+    position: relative;
+}
+
+
+.space{
+    margin: 0 70px;
+}
+
+.change{
+    margin-left: 870px !important;
+}
+
+.user img{
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.user img:hover{
+    position:absolute !important;
+    transform: scale(1.8) !important;
+    background: rgb(116, 20, 39)!important;
+    border-color: rgb(21, 21, 31) !important;
+    cursor: pointer;
+    
+}
+
+.user h3{
+    color: black !important;
+}
+
+.user p{
+    font-size: 22px;
+    color: #cbb4f5;
+    line-height: 32px;
+    margin: 60px 0 30px;
+
+}
+
+.user p::before{
+    content: '\201C';
+    font-size: 80px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -57%;
+    margin-right: 10px;
+}
+
+.user p::after{
+    content: '\201D';
+    font-size: 80px;
+    height: 0;
+    display: inline-block;
+    vertical-align: -100%;
+    margin-left: 10px;
+}
+
+.user h3{
+    font-size: 26px;
+    color: #cbb4f5;
+}
+
+.control{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.control span{
+    width: 15px;
+    height: 15px;
+    background: #321764;
+    border-radius: 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active1{
+    width: 45px !important;
+}
+
+/* Blog */
+
+.teams {
+    margin:4rem auto 0rem auto;
+    padding:2rem;
+    background: rgb(227, 243, 250);
+    height:auto;
+
+}
+
+.teams .title{
+    color: brown;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+.teams .subheading{
+    color: rgb(117, 49, 49);
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 3%;
+}
+
+.teams .carousel .card{
+    background: rgb(240, 233, 233);
+    border-radius: 6px;
+    padding: 0px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 400px;
+    height: 530px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+}
+.teams .carousel .card:hover{
+    background: rgb(201, 199, 199);
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.1s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    color: rgb(87, 4, 83);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card .content{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    text-align: left;
+}
+
+.teams .carousel .card img{
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    /* border: 1px solid rgb(224, 5, 159); */
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .card:hover img{
+    border-color: rgb(9, 5, 235);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid rgb(116, 20, 39)!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: rgb(116, 20, 39)!important;
+}
+
+
+
+
+
+
+
+
+

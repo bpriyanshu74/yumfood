@@ -1,0 +1,354 @@
+/* @Priyanshu */
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+a{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body{
+  font-family:'Molengo', sans-serif, 'Times New Roman', Times, serif;
+}
+.landing{
+  left:0;
+  top:0;  
+  min-height:100vh;
+  overflow-x:hidden;
+  width:100%;
+  animation: animate 16s ease infinite;
+}
+@keyframes animate {
+  0%,100%{
+    background: url(./images/Home-image.jpg);
+    background-size: cover;
+  }
+  25%{
+    background: url(./images/food.jpg);
+    background-size: cover;
+  }
+  50%{
+    background: url(./images/buffet.jpg);
+    background-size: cover;
+  }
+  75%{
+    background: url(./images/wine.jpg);
+    background-size: cover;
+  }
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:rgb(80, 78, 78);
+  height:8vh;
+  opacity: 0.8;
+  width: 100%;
+}
+ul{
+  display:flex;
+  margin-right:20px;
+  justify-content: space-between;
+}
+ul li{
+  list-style-type: none;
+  padding:0 2rem;
+}
+.header h2 a, ul li a{
+  text-decoration: none;
+  color:white;
+}
+.logo{
+  padding: 0 2rem;
+  align-self: center;
+  font-family: 'Dancing script';
+}
+.fa-bars, .fa-times{
+  color:white;
+}
+.openmenu{
+  font-size: 1.3rem;
+  margin:1.3rem;
+  display: none;
+  cursor: pointer;
+}
+.closemenu{
+  font-size: 1.3rem;
+  display: none;
+  cursor: pointer;
+}
+.links{
+  padding-top:1rem;
+}
+
+/* media query for navbar */
+@media(max-width:800px){
+  header .links{
+    height:20vh;
+    position: fixed;
+    width:100%;
+    z-index:10;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    background: rgb(80, 78, 78);
+    transition: top 0.5s ease;
+    display: none;
+  }
+  header .links .closemenu{
+    display: block;
+    position: absolute;
+    top:20px;
+    right:20px;
+  }
+  header .openmenu{
+    display: block;
+    color:white;
+  }
+  header .links li{
+    margin:3px 0px;
+  }
+  header .links li a:hover{
+    background: none;
+    color:rgb(194, 132, 39);
+    font-size: 1.6rem;
+    padding:25px 0px;
+  }
+
+}
+.welcome{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  min-height:30vh;
+  width:50%;
+  margin:auto;
+  margin-top:210px;
+  background-color: rgb(207, 204, 204);
+  opacity:0.9;
+}
+.read{
+  width:auto;
+  margin:10px;
+  color:white;
+  opacity: 0.9;
+  background-color: tomato;
+  border:none;
+  padding:0.2rem 0.5rem;
+  font-size:1rem;
+  border-radius: 5px;
+}
+.welcome-txt{
+  font-family: 'dancing script';
+  font-size: 2rem;
+  text-align: center;
+  margin:10px;
+}
+.welcome h3{
+  font-size:1.2rem;
+  font-family: 'Molengo',Arial;
+  text-align: center;
+}
+.highlight{
+  color:tomato;
+  font-weight: 100;
+}
+.description{
+  margin-top:10px;
+  text-align: center;
+  font-family: 'Molengo',Arial;
+}
+.welcome button a{
+  color:white;
+  text-decoration: none;
+}
+
+@media(max-width:686px){
+  .welcome{
+    font-size: 0.9rem;
+  }
+  .welcome h3{
+    margin:4px ; 
+  }
+}
+
+/* restaurant-thumb-images */
+.centering{
+  padding:4rem 4rem 0rem 4rem;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background: rgb(230, 242, 250); */
+}
+.centering h2{
+  font-weight: 700;
+  font-family: 'Dancing Script';
+  font-size:3rem;
+}
+.restaurant-links{
+  display: flex;
+  margin: 3rem 0rem 2rem 0rem;
+  flex-wrap: wrap;
+}
+.restaurant-links a{
+  margin:0 2rem;
+}
+.restaurant-links a img{
+  height:80%;
+  width:20rem;
+  border-radius: 0.5rem;
+}
+
+/* restaurant links */
+
+.restaurant-page-1{
+  min-height: 100vh;
+  background: url(./images/Restaurant1.jpg);
+  background-size: cover;
+}
+.restaurant-page-2{
+  min-height: 100vh;
+  background: url(./images/Restaurant2\ \(2\).jpg);
+  background-size: cover;
+}
+.restaurant-page-3{
+  min-height: 100vh;
+  background: url(./images/Restaurant3.jpg);
+  background-size: cover;
+}
+.restaurant-page-4{
+  min-height: 100vh;
+  background: url(./images/Restaurant4.jpg);
+  background-size: cover;
+}
+.restaurant-to-home{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity:0.9;
+}
+.restaurant-to-home a{
+  margin-top:1rem;
+  color:black;
+  font-size:1.7rem;
+}
+.restaurant-menu{
+  height:70vh;
+  background-color:rgba(255, 255, 255, 0.8);
+  width:70%;
+  margin:auto;
+  margin-top:4%;
+  padding:1rem;
+  color:black;
+}
+.heading-p{
+  font-family: 'Dancing script';
+}
+.restaurant-info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.res-delivery{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+  width:100%;
+  margin: auto;
+  border-top: dotted 1px black;
+  border-bottom: dotted 1px black;  
+}
+.res-dishes{
+  margin-top:3rem;
+}
+.dish{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0rem 3rem;
+  margin: 10px;
+  height:8vh;
+  border:1px solid rgba(0,0,0,0.4);
+  border-radius: 10px;
+
+}
+.dish p:first-child{
+  font-size: 1.3rem;
+  width: 22%;
+}
+
+.dish button{
+  border:none;
+  background: rgba(50, 55, 55, 0.4);
+  border-radius: 5px;
+  padding:0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+/* about-section css */
+.section-about{
+  margin:3rem;
+}
+.about-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items:center;
+  padding:0 1.25rem 0 1.25rem;
+}
+.about-child{
+  width:37.5rem;    
+  margin:1.25rem 0 0 0;
+  padding:0 0 1rem 0;
+}
+.about-child h1{
+  font-family: 'Dancing Script', cursive;
+  font-size:2.5rem;
+  font-weight: 400;
+  padding: 0 0 0.62rem 0;
+  text-align:justify;
+}
+.about-child h3{
+  font-family: 'Molengo', sans-serif;
+  font-size:1.4rem;
+  text-align:justify;
+  margin:0 0 1.25rem 0;
+}
+.about-child p{
+  font-family: 'Molengo', sans-serif;
+  font-size:1.1rem;
+  text-align:justify;
+  padding:0 0 1.25rem 0;
+}
+
+.about-child-1{
+  width:23.75rem;
+  padding:1rem 0 0 0;
+}
+.about-child-1 img{
+  width:100%;
+  height: auto;
+}
+.about-child a{
+  text-decoration: none;
+  background-color:#f82d2d;
+  color:white;
+  padding:0.5rem 1.25rem 0.5rem 1.25rem;
+  font-family: 'Molengo', sans-serif;      
+}
+.about-child a:hover{
+  background-color:#1e90ff;
+  color:black;
+  transition:0.3s ease;
+}
